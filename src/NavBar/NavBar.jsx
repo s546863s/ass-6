@@ -22,7 +22,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <nav>
+       
             <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
@@ -46,7 +46,7 @@ const NavBar = () => {
     {  loading ? <p>Loading...</p> : menus.map(menu => <li key={menu.id}><a>{menu.name}</a></li>) } 
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end gap-4">
   {/* logo, Login , Get Started button here */}
 
    {loading ? (
@@ -65,7 +65,7 @@ const NavBar = () => {
       </button>
 
       {/* Counter Badge */}
-      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
+      <span className="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
         3
       </span>
 
@@ -99,7 +99,7 @@ const NavBar = () => {
   )}
   </div>
 </div>
-        </nav>
+      
     );
 };
 
