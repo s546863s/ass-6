@@ -1,0 +1,49 @@
+{
+  "navbar": [
+    {
+      "id": 1,
+      "name": "Products",
+      "link": "/products"
+    },
+    {
+      "id": 2,
+      "name": "Features",
+      "link": "/features"
+    },
+    {
+      "id": 3,
+      "name": "Pricing",
+      "link": "/pricing"
+    },
+    {
+      "id": 4,
+      "name": "Testimonials",
+      "link": "/testimonials"
+    },
+    {
+      "id": 5,
+      "name": "Faq",
+      "link": "/faq"
+    }
+  ],
+  "actions": [
+    {
+      "id": 6,
+      "type": "icon",
+      "name": "cart",
+      "icon": "shopping-cart"
+    },
+    {
+      "id": 7,
+      "type": "link",
+      "name": "Login",
+      "link": "/login"
+    },
+    {
+      "id": 8,
+      "type": "button",
+      "name": "Get Started",
+      "link": "/get-started"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
 
 import './App.css'
+import NavBar from './NavBar/NavBar'
 
 function App() {
 
 
   return (
     <>
-    <h1 className='text-amber-500 btn-secondary btn'>hello vite </h1>
-    
+    <section >
+      <NavBar></NavBar>
+    </section>
     </>
   )
 }
