@@ -4,6 +4,7 @@ import ButtonWeb from './ButtonWeb/ButtonWeb'
 import Heading from './Heading/Heading'
 import NavBar from './NavBar/NavBar'
 import Rating from './Rating/Rating'
+import SimplePricing from './SimplePricing/SimplePricing'
 import Steps from './Stpes/Stpes'
 import WebHeading from './WebHeading/WebHeading'
 
@@ -44,8 +45,20 @@ function App() {
       <div className='max-w-6xl mx-auto'>
         <Steps></Steps> 
       </div>
+      </section>
+
+      {/* Simple, Transparent Pricing */}
+      <section>
+        <div className="max-w-6xl mx-auto text-center py-12 md:w-1/2">
+          <WebHeading title="Simple, Transparent Pricing" description="Choose the plan that fits your needs. Upgrade or downgrade anytime." />
+        </div>
+
+        <div className='max-w-6xl mx-auto'>
+          <SimplePricing></SimplePricing>
+        </div>        
         
       </section>
+
     </main>
     </>
 
