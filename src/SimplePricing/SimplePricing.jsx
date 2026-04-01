@@ -12,7 +12,7 @@ const SimplePricing = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-6">
       {plans.map((plan) => (
-        <div key={plan.id} className={`${plan.badge === "Most Popular" ? "bg-purple-600 " : ""}  card  bg-base-100 shadow-sm relative`}>
+        <div key={plan.id} className={`${plan.badge === "Most Popular" ? "bg-blue-400 text-white " : "opacity-90"}  card  bg-base-100 shadow-sm relative`}>
           <div className="card-body">
             <span className={`badge badge-xs badge-warning ${plan.badge === "Most Popular" ? "block" : "hidden"} absolute -top-1  ml-[30%]`}> {plan.badge} </span>
             <div className="flex flex-col justify-between">
