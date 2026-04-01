@@ -3,10 +3,11 @@ import Products from "../Products/Products";
 import CartProduct from "../CaartProducts/CartProduct";
 
 export default function ButtonWeb({
-  products,
-  handleAddToCart,
+  products, 
+  handleAddToCart, 
   cartProducts,
   handleRemoveFromCart,
+  handleClearCart
 }) {
   const [active, setActive] = useState("products");
 
@@ -51,12 +52,14 @@ export default function ButtonWeb({
           <Products products={products} handleAddToCart={handleAddToCart} />
         </div>
       )}
-      {active === "cart" && (
-        <CartProduct
-          cartProducts={cartProducts}
-          handleRemoveFromCart={handleRemoveFromCart}
-        />
-      )}
+     {active === "cart" && (
+  <CartProduct 
+    cartProducts={cartProducts} 
+    handleRemoveFromCart={handleRemoveFromCart}
+    handleClearCart={handleClearCart}
+    setActive={setActive}
+  />
+)}
     </>
   );
 }

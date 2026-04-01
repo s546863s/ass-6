@@ -8,6 +8,7 @@ import Rating from './Rating/Rating'
 import SimplePricing from './SimplePricing/SimplePricing'
 import Steps from './Stpes/Stpes'
 import WebHeading from './WebHeading/WebHeading'
+import Footer from './Footer/Footer'
 
 function App() {
   
@@ -36,6 +37,12 @@ const handleRemoveFromCart = (id) => {
 };
 
 
+// All clear cart function
+const handleClearCart = () => {
+  setCartProducts([]);
+};
+
+
   return (
     <>
     <header className="max-w-6xl mx-auto">
@@ -60,11 +67,12 @@ const handleRemoveFromCart = (id) => {
         </div>
         <div>
           <div className="max-w-6xl mx-auto">
-    <ButtonWeb 
+   <ButtonWeb 
   products={products} 
   handleAddToCart={handleAddToCart}
   cartProducts={cartProducts}
   handleRemoveFromCart={handleRemoveFromCart}
+  handleClearCart={handleClearCart}
 />
 
           </div>
@@ -94,6 +102,10 @@ const handleRemoveFromCart = (id) => {
       </section>
 
     </main>
+
+    <footer>
+      <Footer></Footer>
+    </footer>
     </>
 
   )
