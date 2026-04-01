@@ -2,6 +2,7 @@
 import './App.css'
 import Heading from './Heading/Heading'
 import NavBar from './NavBar/NavBar'
+import Rating from './Rating/Rating'
 
 function App() {
 
@@ -16,7 +17,15 @@ function App() {
         <Heading></Heading>
       </section>
     </header>
+    <main>
+      <section className="bg-[#4F39f6] min-h-6">
+        <div className="max-w-6xl mx-auto">
+          <Rating></Rating>
+        </div>
+      </section>
+    </main>
     </>
+
   )
 }
 
