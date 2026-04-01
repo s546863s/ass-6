@@ -14,7 +14,7 @@ const Steps = () => {
   }, []);
 
 
-  console.log(steps)
+ 
 
   return (
     <div className="grid md:grid-cols-3 gap-6 p-6">

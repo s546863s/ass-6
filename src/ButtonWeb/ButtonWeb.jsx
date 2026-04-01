@@ -1,16 +1,21 @@
 import { useState } from "react";
+import Products from "../Products/Products";
 
-export default function ButtonWeb() {
+export default function ButtonWeb({ products, handleAddToCart, cartProducts }) {
   const [active, setActive] = useState("products");
 
-  console.log(active);
+  // console.log(products);
+  
 
   return (
-    <div className="flex items-center bg-gray-100 rounded-full p-1 w-fit">
+     <>
+   <section className="flex justify-center items-center">
+     <div className="flex items-center bg-gray-100 rounded-full p-1 w-fit">
       {/* Products Button here */}
       <button
         onClick={() => setActive("products")}
         className={`px-6 py-2 rounded-full font-semibold transition-all duration-300
+          cursor-pointer
         ${
           active === "products"
             ? "bg-linear-to-r from-purple-500 to-indigo-500 text-white shadow-md"
@@ -24,14 +29,35 @@ export default function ButtonWeb() {
       <button
         onClick={() => setActive("cart")}
         className={`px-6 py-2 rounded-full font-semibold transition-all duration-300
+          cursor-pointer
         ${
           active === "cart"
             ? "bg-linear-to-r from-purple-500 to-indigo-500 text-white shadow-md"
             : "text-gray-600"
         }`}
       >
-        Cart (3)
+        Cart ({cartProducts.length})
       </button>
+
+     
+
+
+
     </div>
+   </section>
+
+      {active === "products" && 
+      
+      <div className="">
+        <Products 
+  products={products} 
+  handleAddToCart={handleAddToCart}
+/>
+      </div>
+      
+      }
+    
+    {active === "cart" && <h2>Cart Section</h2>}
+   </>
   );
 }

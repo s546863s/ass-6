@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const NavBar = () => {
+const NavBar = ({ cartProducts }) => {
 
     const [menus, setMenus] = useState([]);
 
@@ -66,7 +66,7 @@ const NavBar = () => {
 
       {/* Counter Badge */}
       <span className="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
-        3
+       {cartProducts.length}
       </span>
 
     </div>

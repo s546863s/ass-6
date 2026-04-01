@@ -10,12 +10,12 @@ const Heading = () => {
     />
     <div>
        <div className="flex ">
-         <button className="flex justify-center items-center btn rounded-full text-[#4F39F6] bg-[#4f39f62e]">  <span class="relative flex size-3">
+         <button className="flex justify-center items-center btn rounded-full text-[#4F39F6] bg-[#4f39f62e]">  <span className="relative flex size-3">
 
-  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75">
+  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75">
 
   </span>
-  <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+  <span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
 </span>
             
             New: AI-Powered Tools Available</button>
