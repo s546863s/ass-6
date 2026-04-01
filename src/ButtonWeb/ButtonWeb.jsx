@@ -3,6 +3,8 @@ import { useState } from "react";
 export default function ButtonWeb() {
   const [active, setActive] = useState("products");
 
+  console.log(active);
+
   return (
     <div className="flex items-center bg-gray-100 rounded-full p-1 w-fit">
       {/* Products Button here */}

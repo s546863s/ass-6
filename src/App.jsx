@@ -4,6 +4,7 @@ import ButtonWeb from './ButtonWeb/ButtonWeb'
 import Heading from './Heading/Heading'
 import NavBar from './NavBar/NavBar'
 import Rating from './Rating/Rating'
+import Steps from './Stpes/Stpes'
 import WebHeading from './WebHeading/WebHeading'
 
 function App() {
@@ -34,6 +35,16 @@ function App() {
         <div className="flex justify-center my-4"> 
           <ButtonWeb></ButtonWeb>
            </div>
+      </section>
+      {/* Get Started in 3 Steps section Here */}
+      <section>
+        <div className="max-w-6xl mx-auto text-center py-12 md:w-1/2">
+          <WebHeading title="Get Started in 3 Steps" description="Start using premium digital tools in minutes, not hours." />
+        </div>
+      <div className='max-w-6xl mx-auto'>
+        <Steps></Steps> 
+      </div>
+        
       </section>
     </main>
     </>

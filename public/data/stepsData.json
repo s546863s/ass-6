@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Create Account",
+    "description": "Sign up for free in seconds. No credit card required to get started.",
+    "icon": "O",
+    "image": "https://i.ibb.co.com/cXrc323C/user.png"
+  },
+  {
+    "id": 2,
+    "title": "Choose Products",
+    "description": "Browse our catalog and select the tools that fit your needs.",
+    "icon": "O",
+    "image": "https://i.ibb.co.com/nNNs5QBp/package.png"
+  },
+  {
+    "id": 3,
+    "title": "Start Creating",
+    "description": "Download and start using your premium tools immediately.",
+    "icon": "O",
+    "image": "https://i.ibb.co.com/wZmTK46Q/rocket.png"
+  }
+]
