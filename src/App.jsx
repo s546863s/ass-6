@@ -13,7 +13,6 @@ function App() {
   
 
    const [products, setProducts] = useState([]);
-
    const [cartProducts, setCartProducts] = useState([])
   
    useEffect(() => {
@@ -22,12 +21,19 @@ function App() {
        .then((data) => setProducts(data));
    }, []);
 
+// cart product added function 
+
+
   //  cart button click handler here
 
  const handleAddToCart = (product) => {
   setCartProducts(prev => [...prev, product]);
 };
 
+// cart product Removed function 
+const handleRemoveFromCart = (id) => {
+  setCartProducts(prev => prev.filter(item => item.id !== id));
+};
 
 
   return (
@@ -54,10 +60,11 @@ function App() {
         </div>
         <div>
           <div className="max-w-6xl mx-auto">
-          <ButtonWeb 
+    <ButtonWeb 
   products={products} 
   handleAddToCart={handleAddToCart}
   cartProducts={cartProducts}
+  handleRemoveFromCart={handleRemoveFromCart}
 />
 
           </div>
